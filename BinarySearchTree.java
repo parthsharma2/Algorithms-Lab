@@ -87,7 +87,7 @@ public class BinarySearchTree {
     
     public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree(null);
-        int arr[] = {5, 2, 6, 1, 3};
+        int arr[] = {4, 2, 6, 1, 3, 5, 7};
         System.out.println("Elements in array: ");
         for (int i : arr) {
             bst.insert(i);
@@ -96,9 +96,11 @@ public class BinarySearchTree {
         System.out.println();
         System.out.println("Inorder Traversal of BST: ");
         bst.inorder();
-        bst.search(3);
-        bst.search(5);
-        bst.search(6);
-        bst.search(10);
+        System.out.println("\n1. Best Case:");
+        bst.search(4);
+        System.out.println("2. Avg Case:");
+        bst.search(2);
+        System.out.println("3. Worst Case: ");
+        bst.search(7);
     }
 }
